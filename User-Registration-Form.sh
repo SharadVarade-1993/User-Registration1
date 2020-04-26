@@ -52,3 +52,17 @@ then
 else
 		echo invalid
 fi
+
+echo " "
+echo " "
+
+
+echo "Enter the user password Min 8 character"
+read user
+pat=[0-9a-zA-Z]{8,}
+if [[ $user =~ $pat ]];
+then
+		echo valid
+else
+		echo invalid
+fi
