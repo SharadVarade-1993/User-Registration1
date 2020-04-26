@@ -39,3 +39,16 @@ else
 		echo invalid
 fi
 
+echo " "
+echo " "
+
+
+echo "Enter the user Mobile Number"
+read user
+pat='^([9,1]{2}[ ][0-9]{10})$'
+if [[ $user =~ $pat ]];
+then
+		echo valid
+else
+		echo invalid
+fi
