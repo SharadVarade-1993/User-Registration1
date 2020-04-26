@@ -66,3 +66,16 @@ then
 else
 		echo invalid
 fi
+
+echo " "
+echo " "
+
+echo "Enter the user password in At least one upper case"
+read user
+pat='^([A-Z][a-zA-Z]{1,})$'
+if [[ $user =~ $pat ]];
+then
+		echo valid
+else
+		echo invalid
+fi
