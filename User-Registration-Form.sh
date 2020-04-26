@@ -94,3 +94,16 @@ else
 		echo invalid
 fi
 
+echo " "
+echo " "
+
+
+echo "Enter the password Exactally one Special Character"
+read user
+pat='^([.+-_]*[a-zA-Z]*[.+-_])$'
+if [[ $user =~ $pat ]];
+then
+		echo valid
+else
+		echo invalid
+fi
