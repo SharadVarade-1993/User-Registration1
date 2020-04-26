@@ -26,3 +26,16 @@ else
 		echo invalid
 fi
 
+echo " "
+echo " "
+
+echo "Enter the user Email Address"
+read user
+pat='^[a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})$'
+if [[ $user =~ $pat ]];
+then
+		echo valid
+else
+		echo invalid
+fi
+
